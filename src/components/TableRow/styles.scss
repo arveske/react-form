@@ -1,0 +1,26 @@
+@use "../styles/variables" as var;
+
+.table-row {
+  font-family: var.$work-sans-fonst;
+  font-size: 16px;
+  color: var.$black-light;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+.row-delete {
+  color: var.$red-delete;
+  cursor: pointer;
+  text-align: center;
+}
+
+.product-name-td {
+  padding-left: 22px;
+  text-align: left;
+}
+
+.store-name-td {
+  padding-left: 22px;
+  text-align: left;
+}

@@ -1,0 +1,36 @@
+@use "../styles/input";
+@use "../styles/variables" as var;
+
+.custom-selector-text {
+  @include input.inputBase;
+  background-color: var.$white-main;
+  -webkit-appearance: none;
+  appearance: none;
+  max-width: var.$table-column-max-size;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.select-wrapper {
+  position: relative;
+  max-width: var.$table-column-max-size;
+
+  &:after {
+    border-left: 2.5px solid var.$black-light;
+    border-bottom: 2.5px solid var.$black-light;
+    height: 5px;
+    transform: rotate(-45deg);
+    content: "";
+    font-size: 1rem;
+    width: 5px;
+    max-width: var.$table-column-max-size;
+    top: 19px;
+    right: 21px;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+.show-error {
+  border: 2px solid var.$red-delete;
+}

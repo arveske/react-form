@@ -1,0 +1,13 @@
+@use "../styles/input";
+@use "../styles/variables" as var;
+
+.custom-input-text {
+  @include input.inputBase;
+  max-width: 260px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.show-error {
+  border: 2px solid var.$red-delete;
+}

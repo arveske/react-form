@@ -1,0 +1,16 @@
+@use "./variables" as var;
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+
+@mixin inputBase {
+  font-family: var.$work-sans-fonst;
+  font-size: 16px;
+  padding: 12px 20px 13px;
+  border: 2px solid var.$grey-light;
+  border-radius: 10px;
+  color: var.$black-light;
+  width: 100%;
+
+  ::placeholder {
+    color: var.$grey-holder;
+  }
+}
