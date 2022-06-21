@@ -1,6 +1,6 @@
-# ONOFF test task
+# React form
 
-Test project for Onoff Telecom
+React form
 
 ## Set up for development
 
